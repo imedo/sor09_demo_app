@@ -1,0 +1,12 @@
+<p>
+  <b>Author:</b>
+  <%=h @comment.author %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @comment.text %>
+</p>
+
+
+<%= link_to 'Back', :action => 'index', :id => @comment.blog_entry_id %>

@@ -1,0 +1,14 @@
+<p>
+  <b>Author:</b>
+  <%=h @blog_entry.author %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @blog_entry.text %>
+</p>
+
+
+<%= link_to 'Edit', :action => 'edit', :id => @blog_entry %> |
+<%= link_to 'Comments', :controller => 'comments', :action => 'index', :id => @blog_entry %> |
+<%= link_to 'Back', :action => 'index' %>
