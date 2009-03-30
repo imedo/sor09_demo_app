@@ -1,0 +1,14 @@
+To try this application, either check out the "separated" branch, or the "together" branch.
+
+In the "together" branch, simply start the server in the "shell" application with
+
+- script/server -p 3000
+
+In the "separated" branch, you have to start three Rails applications:
+
+- shell: script/server -p 3000
+- blog: script/server -p 4000
+- comment: script/server -p 5000
+
+In either case, point your browser to http://localhost:3000/blog_entries to get
+a simple blog application.
